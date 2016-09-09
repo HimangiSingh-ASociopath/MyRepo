@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <bean class="com.psl.entity.Employee" id="emp">
+  <!--  setter propertu DI  -->
+  <property name ="id" value ="022284"> </property>
+  <property name="name" value ="Himangi"> </property>
+  <property name="addr" ref="addr"></property>
+  
+  </bean>
+  <bean class="com.psl.entity.Address" id="addr">
+     <property name="city" value ="Pune"></property>
+     <property name="street" value="Wakad Rd"></property>
+     <property name="zip" value ="411057"></property>
+  </bean>
+
+</beans>
